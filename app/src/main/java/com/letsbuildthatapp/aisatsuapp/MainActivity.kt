@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity() {
             this,
             TimePickerDialog.OnTimeSetListener{ _, hourOfDay, _ ->
                 val h = hourOfDay
-                if (h in 1 until 10){
-                    textView1.text = "OHAYO"
+                if (h in 2 until 10){
+                    textView1.text = "おはよう"
                 }else if (h in 10 until 18){
-                    textView1.text = "KONNICHIWA"
+                    textView1.text = "こんにちは"
                 }else{
-                    textView1.text = "KONBANWA"
+                    textView1.text = "こんばんは"
                 }
             }, 13, 0, true
         )
